@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мама Кебаб — меню и заказ онлайн</title>
+<meta name="description" content="Мама Кебаб — шаурма, боксы, питы и закуски. Соберите заказ онлайн, выберите время и получайте бонусные баллы.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark">🌯</span>
+      <span class="logo-text">МАМА<br>КЕБАБ</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#menu">Меню</a>
+      <a href="#bonus">Бонусы и скидки</a>
+      <a href="#how">Как заказать</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <button class="cart-btn" id="cartBtn" aria-label="Открыть корзину">
+      🛒 <span class="cart-count" id="cartCount">0</span>
+    </button>
+    <button class="burger" id="burgerBtn" aria-label="Открыть меню навигации">☰</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-grill-lines" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="eyebrow">Шаурма и восточная выпечка</p>
+    <h1>МАМА КЕБАБ</h1>
+    <p class="hero-sub">Свежие роллы, сочные боксы и хрустящие питы — соберите заказ онлайн, выберите время получения и копите бонусные баллы с каждой покупкой.</p>
+    <div class="hero-cta">
+      <a href="#menu" class="btn btn-primary">Смотреть меню</a>
+      <a href="#bonus" class="btn btn-ghost">Бонусная программа</a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="section-inner about-grid">
+    <div>
+      <p class="eyebrow">О кафе</p>
+      <h2>Готовим по-домашнему, подаём быстро</h2>
+      <p>«Мама Кебаб» — это шаурма и восточная выпечка из свежих продуктов, фирменные соусы и боксы, собранные с любовью. Каждый заказ готовится персонально, после подтверждения на сайте.</p>
+    </div>
+    <ul class="about-points">
+      <li>🥬 Свежие ингредиенты каждый день</li>
+      <li>🔥 Готовим только после оформления заказа</li>
+      <li>⏱️ Реальное время ожидания на сайте</li>
+      <li>🎁 Бонусные баллы за каждый заказ</li>
+    </ul>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="section-inner">
+    <p class="eyebrow">Меню</p>
+    <h2>Выбирайте и добавляйте в корзину</h2>
+    <div class="menu-tabs" id="menuTabs"></div>
+    <div class="menu-content" id="menuContent"></div>
+  </div>
+</section>
+
+<section class="bonus" id="bonus">
+  <div class="section-inner bonus-grid">
+    <div class="bonus-card">
+      <p class="eyebrow">Бонусная программа</p>
+      <h2>Копите баллы — получайте шаурму бесплатно</h2>
+      <ul class="bonus-list">
+        <li><strong>+20 баллов</strong> — за каждые потраченные 15 BYN</li>
+        <li><strong>100 баллов</strong> — обменивайте на 1 шаурму в подарок</li>
+        <li>Баллы начисляются автоматически на номер телефона или Telegram, указанный при заказе</li>
+      </ul>
+      <div class="bonus-lookup">
+        <label for="bonusLookupInput">Проверить баланс баллов</label>
+        <div class="bonus-lookup-row">
+          <input type="text" id="bonusLookupInput" placeholder="Телефон или @username">
+          <button class="btn btn-primary" id="bonusLookupBtn" type="button">Проверить</button>
+        </div>
+        <p id="bonusLookupResult" class="bonus-result"></p>
+      </div>
+    </div>
+    <div class="discount-card">
+      <p class="eyebrow">Скидки</p>
+      <h3 id="discountHeadline">Акция недели: −15% на боксы</h3>
+      <p id="discountText">Актуальные акции публикуются здесь и в нашем Telegram-канале. Следите за обновлениями!</p>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="section-inner">
+    <p class="eyebrow">Как заказать</p>
+    <h2>4 простых шага</h2>
+    <ol class="steps">
+      <li><span class="step-num">1</span><div><h3>Соберите заказ</h3><p>Добавьте боксы, шаурму, питы, закуски, соусы или добавки в корзину.</p></div></li>
+      <li><span class="step-num">2</span><div><h3>Выберите время</h3><p>Укажите, через сколько минут вам удобно забрать заказ.</p></div></li>
+      <li><span class="step-num">3</span><div><h3>Оставьте контакт</h3><p>Укажите телефон или Telegram — это обязательно для подтверждения и защиты от ложных заказов.</p></div></li>
+      <li><span class="step-num">4</span><div><h3>Заберите заказ</h3><p>Мы получим заказ в Telegram и начнём готовить. Ждём вас к назначенному времени!</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="section-inner">
+    <p class="eyebrow">Вопросы</p>
+    <h2>Часто задаваемые вопросы</h2>
+    <div class="faq-list">
+      <details><summary>Нужно ли платить онлайн?</summary><p>Нет, оплата принимается при получении заказа в кафе.</p></details>
+      <details><summary>Можно ли изменить заказ после отправки?</summary><p>Да, свяжитесь с нами по контактному телефону как можно скорее.</p></details>
+      <details><summary>Как узнать баланс бонусных баллов?</summary><p>Введите номер телефона или Telegram-username в разделе «Бонусы и скидки».</p></details>
+      <details><summary>Что если я не успею забрать заказ вовремя?</summary><p>Пожалуйста, предупредите нас заранее по телефону — мы сохраним заказ.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="contacts" id="contacts">
+  <div class="section-inner contacts-grid">
+    <div>
+      <p class="eyebrow">Контакты</p>
+      <h2>Мы всегда на связи</h2>
+      <ul class="contacts-list">
+        <li>📍 Адрес: <span data-fill="address">укажите адрес кафе</span></li>
+        <li>📞 Телефон: <span data-fill="phone">+375 __ ___-__-__</span></li>
+        <li>💬 Telegram: <span data-fill="telegram">@mamakebab</span></li>
+        <li>📷 Instagram: mamakebab.by</li>
+        <li>🕒 Часы работы: <span data-fill="hours">10:00–22:00, без выходных</span></li>
+      </ul>
+    </div>
+    <div class="map-placeholder">Сюда можно вставить карту (Google Maps / Yandex Maps iframe)</div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>© 2026 Мама Кебаб. Шаурма и восточная выпечка.</p>
+</footer>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-header">
+    <h3>Ваш заказ</h3>
+    <button class="cart-close" id="cartClose" aria-label="Закрыть корзину">✕</button>
+  </div>
+
+  <div class="cart-items" id="cartItems"></div>
+  <p class="cart-empty" id="cartEmpty">Корзина пуста. Добавьте что-нибудь из меню!</p>
+
+  <div class="cart-order-form" id="cartOrderForm">
+    <div class="form-group">
+      <label>Время ожидания</label>
+      <div class="wait-options" id="waitOptions"></div>
+    </div>
+    <div class="form-group">
+      <label for="contactInput">Телефон или Telegram-username *</label>
+      <input type="text" id="contactInput" placeholder="+375 29 000-00-00 или @username" required>
+      <p class="field-hint">Обязательно — нужно для подтверждения заказа</p>
+    </div>
+    <div class="form-group">
+      <label for="commentInput">Комментарий (необязательно)</label>
+      <textarea id="commentInput" rows="2" placeholder="Например: без лука"></textarea>
+    </div>
+    <div class="cart-total-row">
+      <span>Итого</span>
+      <strong id="cartTotal">0 руб.</strong>
+    </div>
+    <p class="field-error" id="formError"></p>
+    <button class="btn btn-primary btn-block" id="submitOrderBtn" type="button">Оформить заказ</button>
+    <p class="order-status" id="orderStatus"></p>
+  </div>
+</aside>
+
+<script src="js/menu-data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
